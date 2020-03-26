@@ -57,6 +57,10 @@ div.vertical {
    color: black;
    text-align: center;
 }
+	
+input:focus::placeholder {
+  color: transparent;
+}
 
 </style>
 
@@ -103,9 +107,8 @@ div.vertical {
 
 
 				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
+				
+				$("#password").attr("placeholder","no");
 				$("#password").val("");
 			}
 		});
